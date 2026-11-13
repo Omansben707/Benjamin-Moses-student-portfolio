@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Benjamin Moses Omanami</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"><script src="js/main.js" defer></script><script src="js/contact.js" defer></script>
+</head>
+<body>
+  <button class="mobile-menu" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="index.html"><span class="brand-mark">BM</span><span>BENJAMIN<span class="brand-dot">.</span></span></a>
+    <div class="profile-mini"><img src="image.jpg" alt="Portrait of Benjamin Moses Omanami" class="avatar" onerror="this.src='assets/avatar-placeholder.svg'"><strong>Benjamin Moses Omanami</strong><span>Computer Science · 100 Level</span></div>
+    <p class="nav-label">WORKSPACE</p><nav class="side-nav" aria-label="Main navigation">
+      <a href="index.html"><span>⌂</span> Overview</a><a href="about.html"><span>◎</span> About me</a><a href="projects.html"><span>▧</span> Projects</a><a href="planner.html"><span>▦</span> Academic planner</a><a class="active" href="contact.html"><span>✉</span> Contact</a>
+    </nav><div class="sidebar-bottom"><span class="status-dot"></span><span>Available for collaboration</span><small>© <span data-year></span> Benjamin Moses</small></div>
+  </aside>
+  <main class="main-content">
+    <header class="topbar"><span class="eyebrow">LET'S CONNECT</span><span class="topbar-right">Contact</span></header>
+    <section class="page-intro"><p class="eyebrow red">OPEN TO CONVERSATION</p><h1>Have an idea?<br><span>Let's talk.</span></h1><p class="lead">Whether it’s a learning opportunity, a technology conversation or a possible collaboration, I’d be glad to hear from you.</p></section>
+    <section class="contact-layout section-block">
+      <div class="contact-details">
+        <div class="contact-item"><span class="contact-icon">✉</span><div><small>EMAIL</small><a href="mailto:b.moses2672@miva.edu.ng">b.moses2672@miva.edu.ng</a></div></div>
+        <div class="contact-item"><span class="contact-icon">☎</span><div><small>PHONE / WHATSAPP</small><a href="tel:+2349067539854">+234 906 753 9854</a><a class="minor-link" href="https://wa.me/2349067539854" target="_blank" rel="noopener">Message on WhatsApp ↗</a></div></div>
+        <div class="contact-item"><span class="contact-icon">in</span><div><small>LINKEDIN</small><span>Benjamin Moses</span><p class="note">Search this name on LinkedIn or add your profile URL here.</p></div></div>
+        <div class="contact-item"><span class="contact-icon">⌘</span><div><small>GITHUB</small><a href="https://github.com/Omansben707" target="_blank" rel="noopener">@Omansben707 ↗</a></div></div>
+        <div class="contact-item"><span class="contact-icon">𝕏</span><div><small>X / TWITTER</small><a href="https://x.com/mosesbenjamine" target="_blank" rel="noopener">@mosesbenjamine ↗</a></div></div>
+      </div>
+      <div class="panel contact-panel"><p class="eyebrow red">SEND A MESSAGE</p><h2>Drop me a note.</h2>
+        <form id="contactForm" novalidate>
+          <div class="field"><label for="name">Full name</label><input id="name" name="name" type="text" placeholder="Your name" required><small class="error" id="nameError"></small></div>
+          <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" required><small class="error" id="emailError"></small></div>
+          <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" inputmode="numeric" placeholder="Digits only" required><small class="error" id="phoneError"></small></div>
+          <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea><small class="error" id="messageError"></small></div>
+          <button class="btn btn-red full-width" type="submit">Validate & prepare email ↗</button>
+          <p class="form-feedback" id="formFeedback" aria-live="polite">This demo validates your details and opens your email app. It does not store or send messages to a server.</p>
+        </form>
+      </div>
+    </section>
+    <footer class="footer"><span>Designed & developed with HTML, CSS and JavaScript.</span><span>Benjamin Moses Omanami</span></footer>
+  </main>
+</body></html>

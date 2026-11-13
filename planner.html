@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Planner | Benjamin Moses Omanami</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"><script src="js/main.js" defer></script><script src="js/planner.js" defer></script>
+</head>
+<body>
+  <button class="mobile-menu" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="index.html"><span class="brand-mark">BM</span><span>BENJAMIN<span class="brand-dot">.</span></span></a>
+    <div class="profile-mini"><img src="image.jpg" alt="Portrait of Benjamin Moses Omanami" class="avatar" onerror="this.src='assets/avatar-placeholder.svg'"><strong>Benjamin Moses Omanami</strong><span>Computer Science · 100 Level</span></div>
+    <p class="nav-label">WORKSPACE</p><nav class="side-nav" aria-label="Main navigation">
+      <a href="index.html"><span>⌂</span> Overview</a><a href="about.html"><span>◎</span> About me</a><a href="projects.html"><span>▧</span> Projects</a><a class="active" href="planner.html"><span>▦</span> Academic planner</a><a href="contact.html"><span>✉</span> Contact</a>
+    </nav><div class="sidebar-bottom"><span class="status-dot"></span><span>Available for collaboration</span><small>© <span data-year></span> Benjamin Moses</small></div>
+  </aside>
+  <main class="main-content">
+    <header class="topbar"><span class="eyebrow">PLAN WITH INTENTION</span><span class="topbar-right" id="todayLabel"></span></header>
+    <section class="page-intro compact-intro"><p class="eyebrow red">YOUR STUDY WORKSPACE</p><h1>Academic <span>planner.</span></h1><p class="lead">Keep your assignments, study sessions and academic milestones moving forward.</p></section>
+    <section class="planner-summary">
+      <article class="summary-card"><span>Total tasks</span><strong id="totalCount">0</strong><small>Tasks in your list</small></article>
+      <article class="summary-card"><span>Completed</span><strong id="completedCount">0</strong><small>Progress made</small></article>
+      <article class="summary-card"><span>Remaining</span><strong id="remainingCount">0</strong><small>Still to do</small></article>
+      <article class="summary-card progress-summary"><span>Overall progress</span><strong id="progressPercent">0%</strong><div class="progress-track"><div id="progressBar"></div></div><small>Keep showing up</small></article>
+    </section>
+    <section class="planner-layout section-block">
+      <div class="planner-main">
+        <div class="panel">
+          <div class="panel-heading"><div><p class="eyebrow red">TASK MANAGER</p><h2>My academic tasks</h2></div><span class="panel-count" id="taskCountPill">0 tasks</span></div>
+          <form id="taskForm" class="task-form">
+            <label for="taskTitle">Task description</label><input id="taskTitle" type="text" maxlength="100" placeholder="e.g. Review CSC 101 lecture notes" required>
+            <div class="form-row"><div><label for="taskCategory">Category</label><select id="taskCategory"><option>Assignment</option><option>Study</option><option>Examination</option><option>Project</option><option>Personal</option></select></div><div><label for="taskDue">Due date</label><input id="taskDue" type="date"></div></div>
+            <button class="btn btn-red full-width" type="submit">＋ Add task</button>
+          </form>
+          <div class="task-toolbar"><div class="filter-tabs" role="group" aria-label="Filter tasks"><button class="filter-btn active" data-filter="all" type="button">All</button><button class="filter-btn" data-filter="active" type="button">Pending</button><button class="filter-btn" data-filter="completed" type="button">Completed</button></div><button id="clearCompleted" class="subtle-button" type="button">Clear completed</button></div>
+          <div id="taskList" class="task-list" aria-live="polite"><div class="empty-state">No tasks yet. Add your first task above.</div></div>
+        </div>
+      </div>
+      <aside class="planner-side">
+        <div class="panel">
+          <div class="panel-heading"><div><p class="eyebrow red">STAY ON TRACK</p><h2>Study reminder</h2></div><span class="panel-icon">✦</span></div>
+          <p class="body-copy">Small, consistent study sessions can make demanding academic goals feel more manageable.</p>
+          <ul class="tip-list"><li>Break large assignments into smaller actions.</li><li>Set a realistic deadline for every task.</li><li>Review pending work at the start of each week.</li></ul>
+        </div>
+        <div class="panel dark-panel"><p class="eyebrow">A SIMPLE RULE</p><h2>Progress over perfection.</h2><p>Show up, focus on the next task and keep learning.</p></div>
+      </aside>
+    </section>
+    <footer class="footer"><span>Your tasks are saved in this browser using local storage.</span><span>Benjamin Moses Omanami</span></footer>
+  </main>
+</body></html>
